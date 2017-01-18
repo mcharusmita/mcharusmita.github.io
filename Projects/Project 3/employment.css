@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/* CSS Document */
+body{
+	width:100%;}
+
+article {
+		width: 500px;
+		margin: auto;
+		float:left;
+	}
+*{ margin: 0; padding:0;}
+p{
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:15px;
+}
+h3 {
+	font-size:36px;
+}
+h4 {
+	font-size:36px;
+}
+
+	blockquote.co {
+		float: center;
+		background:#FFFBF0;
+		font-size: 2em;
+		width: 45%;
+		text-align: center;
+	}
+#slider-nav {
+	/*display:none;*/
+	margin-top:1em;
+}
+#slidder-nav button{
+	padding: 1em;
+	margin-right: 1em;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.slider {
+	margin-top:10px;
+	width:490px;
+	height:315px;
+	overflow:scroll;
+	float:left;
+}
+.slider ul {
+	width: 10000px;
+	list-style: none;
+}
+.slider li {
+	float: left;
+}

@@ -1,0 +1,265 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Big Apple | New York City | News</title>
+<!-- <script type="text/javascript" src="BigAppleCityNY.js"></script> -->
+<script src="../../jquery-1.11.1.js"></script>
+<link rel="stylesheet" href="BigAppleCityNY.css" />
+<link rel="stylesheet" href="news.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+<body onload="MM_preloadImages('Home/brook1.png','Home/man2.png','Home/queens2.png')">
+<div id="main">
+<div id="header">
+<!-- <table>
+<tr>
+<td><div id="td1"><img src="Home/main1.png" width="188" height="124" /></div></td>
+<td>
+<div id="td2">
+<span >NYC</span>
+</div>
+</td>
+<div id="td3">
+<td>Destinations</td>
+</div>
+<td><div id="td4">Things to Do</div></td>
+<td><div id="td5">News</div></td>
+<td><div id="td6">Ask Us</div></td>
+<td><div id="td7"><img src="Home/mag.png" width="53" height="43" /></div></td>
+</tr>
+</table> -->
+<sticknav>
+    <div id="navigationbar">
+      <nav class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="navbar-header"> <a class="navbar-brand" href="BigAppleCityNY.html" style="color:#000; background-color:#CCC;">Big Apple City</a> </div>
+        <div>
+          <ul class="nav navbar-nav">
+            
+           <li class="dropdown" id="td2"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> New York City <b class="caret"></b> </a>
+              <ul class="dropdown-menu">
+                <li><a href="NYC/AboutNYC.html">About The Big Apple</a></li>
+               
+                <li><a href="Brooklyn/Brooklyn.html">Brooklyn</a></li>
+                <li><a href="Manhattan/Manhattan.html">Manhattan</a></li>
+                <li><a href="Queens/Queens.html">Queens</a></li>
+                
+              </ul>
+            </li>
+            <li class="dropdown" id="td7"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Top Destinations <b class="caret"></b> </a>
+              <ul class="dropdown-menu">
+                <li><a href="Top Destinations/ChelseaMarket.html">Chelsea Market</a></li>
+                <li><a href="Top Destinations/EmpireState.html">Empire State</a></li>
+                <li><a href="Top Destinations/Moma.html">Metropolitan Museum of Art</a></li>
+                <li><a href="Top Destinations/StatueAndEllis.html">Statue of Liberty & Ellis Island</a></li>
+                <li><a href="Top Destinations/TimesSquare.html">Times Square</a></li>
+              </ul>
+            </li>
+            <li class="dropdown" id="td3"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Things to Do<b class="caret"></b> </a>
+              <ul class="dropdown-menu">
+                <li><a href="TO Do/Adventure.html">Adventure</a></li>
+                <li><a href="TO Do/Food.html">Food</a></li>
+                <li><a href="TO Do/Lifestyle.html">Lifestyle</a></li>
+                <li><a href="TO Do/Tours.html">Tours</a></li>
+              </ul>
+            </li>
+            <li id="td4"><a href="News.html">News</a></li>
+            <li><a href="AskUs.html">Ask Us</a></li>
+            <li id="td6"><a href="https://www.google.com/"><img src="Home/mag.png" height="auto" width="25px"></a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </sticknav>
+</div>
+<!--End of header div-->
+<div id="right">
+<br>
+<script language="javascript" type="text/javascript">
+var day_of_week = new Array('Sun','Mon','Tue','Wed','Thu','Fri','Sat');
+var month_of_year = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+
+//  DECLARE AND INITIALIZE VARIABLES
+var Calendar = new Date();
+
+var year = Calendar.getFullYear();     // Returns year
+var month = Calendar.getMonth();    // Returns month (0-11)
+var today = Calendar.getDate();    // Returns day (1-31)
+var weekday = Calendar.getDay();    // Returns day (1-31)
+
+var DAYS_OF_WEEK = 7;    // "constant" for number of days in a week
+var DAYS_OF_MONTH = 31;    // "constant" for number of days in a month
+var cal;    // Used for printing
+
+Calendar.setDate(1);    // Start the calendar day at '1'
+Calendar.setMonth(month);    // Start the calendar month at now
+
+
+/* VARIABLES FOR FORMATTING
+NOTE: You can format the 'BORDER', 'BGCOLOR', 'CELLPADDING', 'BORDERCOLOR'
+      tags to customize your caledanr's look. */
+
+var TR_start = '<TR>';
+var TR_end = '</TR>';
+var highlight_start = '<TD WIDTH="30"><TABLE CELLSPACING=0 BORDER=1 BGCOLOR=DEDEFF BORDERCOLOR=CCCCCC><TR><TD WIDTH=20><B><CENTER>';
+var highlight_end   = '</CENTER></TD></TR></TABLE></B>';
+var TD_start = '<TD WIDTH="30"><CENTER>';
+var TD_end = '</CENTER></TD>';
+
+/* BEGIN CODE FOR CALENDAR
+NOTE: You can format the 'BORDER', 'BGCOLOR', 'CELLPADDING', 'BORDERCOLOR'
+tags to customize your calendar's look.*/
+
+cal =  '<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=0 BORDERCOLOR=BBBBBB><TR><TD>';
+cal += '<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=2>' + TR_start;
+cal += '<TD COLSPAN="' + DAYS_OF_WEEK + '" BGCOLOR="#EFEFEF"><CENTER><B>';
+cal += month_of_year[month]  + '   ' + year + '</B>' + TD_end + TR_end;
+cal += TR_start;
+
+//   DO NOT EDIT BELOW THIS POINT  //
+
+// LOOPS FOR EACH DAY OF WEEK
+for(index=0; index < DAYS_OF_WEEK; index++)
+{
+
+// BOLD TODAY'S DAY OF WEEK
+if(weekday == index)
+cal += TD_start + '<B>' + day_of_week[index] + '</B>' + TD_end;
+
+// PRINTS DAY
+else
+cal += TD_start + day_of_week[index] + TD_end;
+}
+
+cal += TD_end + TR_end;
+cal += TR_start;
+
+// FILL IN BLANK GAPS UNTIL TODAY'S DAY
+for(index=0; index < Calendar.getDay(); index++)
+cal += TD_start + '  ' + TD_end;
+
+// LOOPS FOR EACH DAY IN CALENDAR
+for(index=0; index < DAYS_OF_MONTH; index++)
+{
+if( Calendar.getDate() > index )
+{
+  // RETURNS THE NEXT DAY TO PRINT
+  week_day =Calendar.getDay();
+
+  // START NEW ROW FOR FIRST DAY OF WEEK
+  if(week_day == 0)
+  cal += TR_start;
+
+  if(week_day != DAYS_OF_WEEK)
+  {
+
+  // SET VARIABLE INSIDE LOOP FOR INCREMENTING PURPOSES
+  var day  = Calendar.getDate();
+
+  // HIGHLIGHT TODAY'S DATE
+  if( today==Calendar.getDate() )
+  cal += highlight_start + day + highlight_end + TD_end;
+
+  // PRINTS DAY
+  else
+  cal += TD_start + day + TD_end;
+  }
+
+  // END ROW FOR LAST DAY OF WEEK
+  if(week_day == DAYS_OF_WEEK)
+  cal += TR_end;
+  }
+
+  // INCREMENTS UNTIL END OF THE MONTH
+  Calendar.setDate(Calendar.getDate()+1);
+
+}// end for loop
+
+cal += '</TD></TR></TABLE></TABLE>';
+
+//  PRINT CALENDAR
+document.write(cal);
+
+//  End -->
+</script>
+</div>
+<center><h1>News</h1></center>
+<div id="mainbo">
+<center>
+<div id="slider-k">
+    <div class="frame-k">
+        <img src="1.jpg" alt="" />
+    </div>
+    <div class="frame-k">
+        <img src="2.jpg" alt="" />
+    </div>
+    <div class="frame-k">
+        <img src="3.jpg" alt="" />
+    </div>
+    <div class="frame-k">
+        <img src="4.jpg" alt="" />
+    </div>
+</div>
+<center>
+  <div id="nf">
+New York City is home to over 8 million people from all around the world, and the best part about that is there is not a moment when you will have nothing to do.
+New York City is the city that never sleep, and so will you find something or the other to do. The followin list was compiled by the staff for you:
+<br>
+<ul type="none" align="left" line-spacing="2px">
+  <li><a href="http://dangerdame.com/2014/05/20/the-coolest-wildest-weirdest-things-to-do-in-nyc-a-guide-for-the-freaks/">NYC Guide</a></li>
+  <li><a href="https://www.vayable.com/experiences/search/New+York+City">Experience the Real NYC</a></li>
+  <li><a href="http://www.complex.com/pop-culture/2014/07/the-50-coolest-places-in-nyc-right-now/">Top 50 places in NYC</a></li>
+  <li><a href="http://travelingpanties.com/2014/01/14/top-10-best-things-to-do-to-experience-the-real-new-york-that-locals-actually-do-too/">Local NYC</a></li>
+  <li><a href="https://www.vimbly.com/nyc">Find something for yourself</a></li>
+    
+</ul>
+</div>
+</div>
+<div id="ohwell">
+  <table>
+
+    <tr>
+      <br>
+      <td>Social Media</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="https://twitter.com/nycgov"><img src="twi.png" height="100px" width="100px"></a>
+        <a href="https://plus.google.com/+NewYork/posts"><img src="g+.png" height="100px" width="100px"></a>
+        <a href="https://www.facebook.com/nycgov"><img src="fb.png" height="100px" width="100px"></a>
+      </td>
+    </tr>
+    <tr colspan="3"><td>Copyright Charusmita <br></td></tr>
+  </table>
+
+</div>
+</div>
+<!--End of main body div, enclosign everything--q>
+</body>
+</html>

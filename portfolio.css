@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/* CSS Document */
+/*body{
+	background-image:url(background.png);
+	width:auto;
+	height:auto;
+	}*/
+body, html {
+	cursor:url(test.png);
+}
+html { 
+  background: url(backg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#main{
+	font-family: 'PT Sans', sans-serif;
+	color:#FFF;
+	font-size:40px;
+	margin-left:10px;
+	}
+#back{
+	float:none;
+	text-align:center;
+	}
+#mainn{
+	font-family: 'Ubuntu', sans-serif;
+	color:#FFF;
+	font-size:20px;
+	}
+#footer{
+	
+	 background: url(footer.png) no-repeat center center fixed; 
+	 color:#FFFFFF;
+	 font-size:20px;
+	 padding-bottom:0px;
+	 position: fixed; 
+	 bottom: 0;
+	 width:100%;
+	 }
+#copy{
+	float:left;}
+	

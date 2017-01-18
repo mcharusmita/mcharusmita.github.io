@@ -1,0 +1,100 @@
+@charset "UTF-8";
+/* CSS Document */
+@charset "UTF-8";
+/* CSS Document */
+body{
+	font-family: "Courier New", Courier, monospace;
+	position: relative;	
+}
+#line {
+	float: left;
+	height: auto;
+	width: auto;
+}
+
+tab{
+	padding-left:100px;}
+	#quote{
+		text-align:center;
+		color:#F30;
+		}
+#wonderwhy {
+	height: 1000px ;
+	width: 200px;
+	float: left;
+	margin-left:50px;
+	border-right-width: thick;
+	border-right-style: solid;
+	border-top-color: #D6D6D6;
+	border-right-color: #000;
+	color:#F90;
+	font-size:24px;
+
+	}
+	#right {
+	height: 1000px ;
+	width: 200px;
+	float: right;
+	margin-right:50px;
+	border-left-width: thick;
+	border-left-style: solid;
+	border-top-color: #D6D6D6;
+	border-left-color: #000;
+	color:#F90;
+	padding-left:50px;
+	font-size:24px;
+	text-align:center;
+	}
+	#bull{
+		border:none;
+	
+		}
+		#pd{
+			vertical-align:auto;
+		position:absolute;
+		}#pd {
+	color: #333;
+}
+.pd {
+	color: #000;
+	font-size: 24px;
+}
+#tdddd {
+	font-size: smaller;
+}
+#tdddd {
+	color: #000;
+	text-align:center;
+}
+#dd {
+	font-size: 18px;
+}
+#red{
+	padding-top:50px;}
+#face{
+	color:rgb(38, 67, 110);
+	font-size:18px;}
+	#bde{color:black;}
+	#tablee{
+		font-size: 28px;
+		}
+		#wer{color:#CB2022;
+		}
+	
+	#er{
+		color:#4B3636;}
+		#wq{
+			color:#4870E2;
+			}
+			#bgf{
+				color:
+				#2344B3;}
+				#ed{
+					color:
+					#5B69F9;}
+					#bade{
+						 color:
+						#0064F9;}
+						
+						#ret{
+							color:#CF3485;}

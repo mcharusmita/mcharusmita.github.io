@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Projects</title>
+<link rel="stylesheet" href="portfolio.css">
+<link rel="stylesheet" href="labs.css">
+<script type="text/javascript" src="labs.js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('home2.png','project1.png')">
+<div id="NavBar" class="navbar-fixed">
+<center>
+<table>
+<tr>
+<td>
+  <a href="index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','home2.png',1)"><img src="home.png" alt="" width="150" height="75" id="Image1"></a>
+</td><td>  <a href="Projects.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('PRojects','','project1.png',1)"><img src="projects2.png" alt="" width="150" height="75" id="PRojects"></a></td>
+</tr>
+</table>
+</center>
+</div>
+
+<div class="Hero"></div>
+
+<!-- Main labs begin -->
+<div id="labs">
+<div class="wrapper roundedCorners">
+ 
+  <div class="main">
+    <h1><div id="re">Projects</div></h1>
+    <p><div id="red">
+   Projects are a way to show what we have learnt over a course of time.<br>
+    Click on the projects to know more about them.</div></p>
+  </div>
+
+</div>
+
+<ul class="top">
+  <li class="galleryItem">
+    <a class="caption"
+      href="Projects/Project 1/home.html" target="_blank"
+      data-title="Project 1 "
+      data-description="Project 1 was to built on a serious topic presented sarcastically. ">
+   
+        <img src="Project shots/Project1.png" alt="Project 1">
+    
+    </a>
+  </li>
+  
+  
+  <li class="galleryItem">
+    <a class="caption"
+      href="Projects/Project 2/home.html" target="_blank"
+      data-title="Project 2 "
+      data-description="Project 2 was based on various podcasts heard. ">
+   
+        <img src="Project shots/Project2.png" alt="Project 2">
+    
+    </a>
+  </li>
+  
+<li class="galleryItem">
+    <a class="caption"
+      href="Projects/Project 3/home.html" target="_blank"
+      data-title="Project 3 "
+      data-description="Project 3 was a colab project, based on a topic from Career and Financial Management">
+   
+        <img src="Project shots/Project3.png" alt="Project 3">
+    
+    </a>
+  </li>
+ 
+<li class="galleryItem">
+    <a class="caption"
+      href="Projects/Project 5/BigAppleCityNY.html" target="_blank"
+      data-title="Project 4 "
+      data-description="Project 4 was the final project done on New York City">
+   
+        <img src="Project shots/Project5.png" alt="Project 5">
+    
+    </a>
+  </li>
+ 
+  
+
+</div>
+</div>
+<!-- End of Main labs begin -->
+
+
+<div id="footer"> 
+
+<center>
+<table cellpadding="5px"> 
+<tr>
+<td>
+&copy; 2017 - All rights reserved - Charusmita Madan 
+</td>
+<td><br /><br /></td>
+
+<td>
+  <a href="https://www.linkedin.com/in/mcharusmita/" target="_blank" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image8','','in2.png',1)"><img src="in.png" alt="" width="35" height="35" id="Image8" /></a></td>
+  <td><br /><br /><br /><br /></td>
+  
+  
+</tr>
+
+</table>  
+</div>
+</div>
+</center>
+</center></center>
+
+</body>
+</html>
